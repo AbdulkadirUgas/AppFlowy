@@ -136,7 +136,6 @@ class _SetupPasswordDialogContentState
             .tr(),
         keyboardType: TextInputType.visiblePassword,
         obscureText: true,
-        autofillHints: const [AutofillHints.password],
         suffixIconConstraints: BoxConstraints.tightFor(
           width: iconSize + theme.spacing.m,
           height: iconSize,
@@ -169,7 +168,6 @@ class _SetupPasswordDialogContentState
             .tr(),
         keyboardType: TextInputType.visiblePassword,
         obscureText: true,
-        autofillHints: const [AutofillHints.password],
         suffixIconConstraints: BoxConstraints.tightFor(
           width: iconSize + theme.spacing.m,
           height: iconSize,

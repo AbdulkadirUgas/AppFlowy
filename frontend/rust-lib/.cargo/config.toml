@@ -10,3 +10,16 @@ rustflags = ["-C", "link-arg=-miphoneos-version-min=10.0"]
 
 [target.aarch64-apple-ios-sim]
 rustflags = ["-C", "link-arg=-mios-simulator-version-min=10.0"]
+
+[target.aarch64-linux-android]
+ar = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-ar.exe"
+linker = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android35-clang.cmd"
+
+[env]
+CC_aarch64_linux_android = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android35-clang.cmd"
+CXX_aarch64_linux_android = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android35-clang++.cmd"
+AR_aarch64_linux_android = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-ar.exe"
+OPENSSL_NO_VENDOR = "1"
+OPENSSL_DIR = "C:\\Strawberry\\c"
+OPENSSL_LIB_DIR = "C:\\Strawberry\\c\\lib"
+OPENSSL_INCLUDE_DIR = "C:\\Strawberry\\c\\include"
