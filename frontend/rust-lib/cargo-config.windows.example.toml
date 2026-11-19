@@ -1,0 +1,25 @@
+# Windows-only Cargo settings for building the Android Rust backend.
+#
+# These paths are specific to one machine, so they are not kept in the shared
+# frontend/rust-lib/.cargo/config.toml (that would break macOS/Linux builds).
+#
+# To use on Windows:
+#   1. Copy this file to  <AppFlowy repo root>\.cargo\config.toml
+#      (git ignores it via the `**/.cargo/**` rule in .gitignore).
+#   2. Adjust the NDK and OpenSSL paths below to match your machine.
+#
+# Cargo reads config files from every parent directory of rust-lib, so these
+# settings are merged with the shared rust-lib/.cargo/config.toml.
+
+[target.aarch64-linux-android]
+ar = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-ar.exe"
+linker = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android35-clang.cmd"
+
+[env]
+CC_aarch64_linux_android = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android35-clang.cmd"
+CXX_aarch64_linux_android = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\aarch64-linux-android35-clang++.cmd"
+AR_aarch64_linux_android = "C:\\Android\\Sdk\\ndk\\30.0.14904198\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-ar.exe"
+OPENSSL_NO_VENDOR = "1"
+OPENSSL_DIR = "C:\\Strawberry\\c"
+OPENSSL_LIB_DIR = "C:\\Strawberry\\c\\lib"
+OPENSSL_INCLUDE_DIR = "C:\\Strawberry\\c\\include"
