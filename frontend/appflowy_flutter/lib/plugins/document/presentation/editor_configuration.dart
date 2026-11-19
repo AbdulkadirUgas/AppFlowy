@@ -368,6 +368,9 @@ Map<String, BlockComponentBuilder> _buildBlockComponentBuilderMap(
       configuration,
       editorState,
     ),
+    HandwritingBlockKeys.type: HandwritingBlockComponentBuilder(
+      configuration: configuration,
+    ),
     MathEquationBlockKeys.type: _buildMathEquationBlockComponentBuilder(
       context,
       configuration,

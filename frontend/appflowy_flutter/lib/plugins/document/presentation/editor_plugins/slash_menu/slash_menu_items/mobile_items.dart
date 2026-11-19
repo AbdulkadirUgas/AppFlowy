@@ -127,5 +127,6 @@ MobileSelectionMenuItem advancedMobileSlashMenuItem = MobileSelectionMenuItem(
   children: [
     codeBlockSlashMenuItem,
     mathEquationSlashMenuItem,
+    handwritingSlashMenuItem,
   ],
 );

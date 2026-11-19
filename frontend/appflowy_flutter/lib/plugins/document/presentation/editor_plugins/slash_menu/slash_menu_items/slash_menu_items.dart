@@ -9,6 +9,7 @@ export 'emoji_item.dart';
 export 'file_item.dart';
 export 'heading_items.dart';
 export 'image_item.dart';
+export 'handwriting_item.dart';
 export 'math_equation_item.dart';
 export 'numbered_list_item.dart';
 export 'outline_item.dart';

@@ -28,6 +28,7 @@ export 'find_and_replace/find_and_replace_menu.dart';
 export 'font/customize_font_toolbar_item.dart';
 export 'header/cover_editor_bloc.dart';
 export 'header/custom_cover_picker.dart';
+export 'handwriting/handwriting_block_component.dart';
 export 'header/document_cover_widget.dart';
 export 'heading/heading_toolbar_item.dart';
 export 'image/custom_image_block_component/custom_image_block_component.dart';

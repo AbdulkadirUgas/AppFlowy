@@ -62,6 +62,7 @@ class AddBlockMenuItemBuilder {
       ..._buildCalloutMenuItems(colorMap),
       ..._buildCodeMenuItems(colorMap),
       ..._buildMathEquationMenuItems(colorMap),
+      ..._buildHandwritingMenuItems(colorMap),
     ];
   }
 
@@ -399,6 +400,20 @@ class AddBlockMenuItemBuilder {
     ];
   }
 
+  List<TypeOptionMenuItemValue<String>> _buildHandwritingMenuItems(
+    Map<String, Color> colorMap,
+  ) {
+    return [
+      TypeOptionMenuItemValue(
+        value: HandwritingBlockKeys.type,
+        backgroundColor: colorMap[HandwritingBlockKeys.type]!,
+        text: LocaleKeys.editor_handwritingShortForm.tr(),
+        icon: FlowySvgs.edit_s,
+        onTap: (_, __) => _insertBlock(handwritingNode()),
+      ),
+    ];
+  }
+
   Map<String, Color> _colorMap(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     if (isDarkMode) {
@@ -417,6 +432,7 @@ class AddBlockMenuItemBuilder {
         CalloutBlockKeys.type: const Color(0xFF66599B),
         CodeBlockKeys.type: const Color(0xFF66599B),
         MathEquationBlockKeys.type: const Color(0xFF66599B),
+        HandwritingBlockKeys.type: const Color(0xFF66599B),
       };
     }
     return {
@@ -434,6 +450,7 @@ class AddBlockMenuItemBuilder {
       CalloutBlockKeys.type: const Color(0xFFCABDFF),
       CodeBlockKeys.type: const Color(0xFFCABDFF),
       MathEquationBlockKeys.type: const Color(0xFFCABDFF),
+      HandwritingBlockKeys.type: const Color(0xFFCABDFF),
     };
   }
 

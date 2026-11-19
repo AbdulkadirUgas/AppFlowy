@@ -1819,6 +1819,7 @@
         "callout": "Callout",
         "outline": "Outline",
         "mathEquation": "Math Equation",
+        "handwriting": "Handwriting",
         "code": "Code",
         "toggleList": "Toggle list",
         "toggleHeading1": "Toggle heading 1",
@@ -1955,6 +1956,18 @@
         "name": "Math Equation",
         "addMathEquation": "Add a TeX equation",
         "editMathEquation": "Edit Math Equation"
+      },
+      "handwriting": {
+        "name": "Handwriting",
+        "pen": "Pen",
+        "highlighter": "Highlighter",
+        "eraser": "Eraser",
+        "undo": "Undo",
+        "redo": "Redo",
+        "clear": "Clear all",
+        "fingerDrawing": "Draw with finger",
+        "placeholder": "Write here with your S Pen",
+        "fingerPlaceholder": "Write or draw here"
       },
       "optionAction": {
         "click": "Click",
@@ -2670,6 +2683,7 @@
     "toggleListShortForm": "Toggle",
     "quoteListShortForm": "Quote",
     "mathEquationShortForm": "Formula",
+    "handwritingShortForm": "Handwriting",
     "codeBlockShortForm": "Code"
   },
   "favorite": {
